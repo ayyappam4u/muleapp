@@ -46,7 +46,7 @@
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>aminnekanti1234</username>
 						<password>Baahulya@467</password>
-						<applicationName>sfapi-dev</applicationName>
+						<applicationName>sfapi-dev3</applicationName>
 						<environment>Sandbox</environment>
 						<region>us-east-2</region>
 						<workers>1</workers>
