@@ -29,28 +29,31 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+					<classifier>mule-application</classifier>
+				</configuration>
 			</plugin>
 			<plugin>
-			  <groupId>org.mule.tools.maven</groupId>
-			  <artifactId>mule-maven-plugin</artifactId>
-			  <version>3.7.1</version>
-			  <extensions>true</extensions>
-			  <configuration>
-			    <cloudHubDeployment>
-			      <uri>https://anypoint.mulesoft.com</uri>
-			      <muleVersion>${app.runtime}</muleVersion>
-			      <username>aminnekanti1234</username>
-			      <password>Baahulya@467</password>
-			      <applicationName>sfapi</applicationName>
-			      <environment>Sandbox</environment>
-			      <region>us-east-2</region>
-			      <workers>1</workers>
-			      <workerType>Micro</workerType>
-			      <properties>
-			        <key>value</key>
-			      </properties>
-			    </cloudHubDeployment>
-			  </configuration>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>3.7.1</version>
+				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${app.runtime}</muleVersion>
+						<username>aminnekanti1234</username>
+						<password>Baahulya@467</password>
+						<applicationName>sfapi</applicationName>
+						<environment>Sandbox</environment>
+						<region>us-east-2</region>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
+						<properties>
+							<http.port>8081</http.port>
+						</properties>
+					</cloudHubDeployment>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -111,7 +114,7 @@
 		<pluginRepository>
 			<id>mule-public</id>
 			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
-		  </pluginRepository>
+		</pluginRepository>
 	</pluginRepositories>
 
 </project>
