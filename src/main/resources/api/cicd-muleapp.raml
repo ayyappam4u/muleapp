@@ -1,0 +1,25 @@
+#%RAML 1.0
+title: cicd-muleapp
+baseUri: http://localhost:8081
+version: :1.0.0
+
+/cicd:
+  get:
+    queryParameters:
+      id:
+        type: string
+        required: false
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                status: 200,
+                Message: "success"
+              }
+      
+
+
+
+
