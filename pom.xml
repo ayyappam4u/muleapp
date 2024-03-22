@@ -48,9 +48,6 @@
 						<region>us-east-2</region>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
-						<properties>
-							<http.port>8081</http.port>
-						</properties>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
